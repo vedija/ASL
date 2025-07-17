@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ASL Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: #7728b0;
+            color: white;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            text-align: center;
+            background: url('convert.jpg') center/cover no-repeat;
+            color: white;
+        }
+
+        .hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fff;
+            color: #7728b0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .about, .how-it-works, .features {
+            padding: 50px;
+            text-align: center;
+        }
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .step {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #7728b0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ASL Converter</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Convert Speech to ASL Instantly</h1>
+            <p>Breaking communication barriers with real-time ASL translation.</p>
+            <a href="index.html" class="btn">Try It Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Our Platform</h2>
+                <p>Our ASL converter is designed to help bridge the gap between spoken language and sign language.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets\images\about.jpg" alt="About Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">🎤 Speak into the microphone</div>
+            <div class="step">🔠 Speech gets converted into text</div>
+            <div class="step">🖐 Text is mapped to ASL videos</div>
+            <div class="step">📽️ ASL signs play sequentially</div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <img src="assets\images\real-time.jpg" alt="Real-Time Conversion">
+                <h3>Real-Time Conversion</h3>
+                <p>Minimal delay between speech and ASL.</p>
+            </div>
+            <div class="card">
+                <img src="assets\images\sequential.jpg" alt="Extensive ASL Database">
+                <h3>Extensive ASL Database</h3>
+                <p>Vast collection of ASL signs.</p>
+            </div>
+            <div class="card">
+                <img src="assets\images\responsive.jpg" alt="Seamless Integration">
+                <h3>Seamless Integration</h3>
+                <p>Integrate into different platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <p>Contact us: aslconverter@example.com</p>
+        <p>&copy; 2025 ASL Converter. All rights reserved.</p>
+    </footer>
+</body>
+</html>

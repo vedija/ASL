@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h1 {
+    color: #7728b0;
+}
+
+button {
+    background-color: #7728b0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #5a1f8e;
+}
+
+#output-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+video {
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading-indicator {
+    font-size: 18px;
+    color: #7728b0;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+#video-container {
+    display: flex;  /* Arrange videos in a row */
+    flex-wrap: wrap; /* Wrap to next line if screen is small */
+    justify-content: center; /* Center align the videos */
+    gap: 15px; /* Add space between videos */
+    margin-top: 20px;
+}
+
+video {
+    width: 250px; /* Set fixed width */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
